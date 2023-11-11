@@ -1,0 +1,276 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply Glassmorphism effect to the header and project section */
+.glassmorphism {
+    background:rgb(215, 124, 171);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    transition: background 0.3s ease-in-out;
+    
+}
+
+.glassmorphism:hover {
+    
+    backdrop-filter: blur(10px);
+    
+}
+
+body{
+    background-color: #100f0f;
+}
+/* Style the header */
+header {
+    text-align: right;
+    padding: 100px 0;
+    margin-right:70px;
+}
+
+header h1 {
+    font-size: 50px;
+    color: rgb(11, 9, 9);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header p {
+    font-size: 18px;
+    color: #100f0f;
+}
+
+/* Apply Parallax effect to the about section */
+.parallax {
+    background-image: url('https://img.freepik.com/free-photo/conference-room-with-desk-wall-windows-that-says-office_1340-37385.jpg?size=626&ext=jpg&ga=GA1.1.1880011253.1699660800&semt=ais'); /* Replace with your image */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 100px 0;
+    height:600px;
+}
+
+/* Style the content on the parallax section */
+.content {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    color: #0d0b0b;
+}
+
+/* Style the heading and text in the content section */
+.content h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(14, 11, 11, 0.5);
+}
+
+.content p {
+    font-size: 18px;
+}
+
+/* Add your own media queries and additional styles as needed */
+
+/* Add the following styles after your existing CSS */
+
+/* Style the contact section */
+.social-icons {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.social-icons li {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.social-icons li:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Style the social media icons */
+.social-icons img {
+    width: 20px;
+    height: 20px;
+    filter: invert(1); /* This inverts the icon colors to make them look better on the glassmorphism background */
+}
+
+/* Add more styles as needed */
+/* Add the following styles after your existing CSS */
+
+/* Style the navigation bar */
+nav {
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #00f7ff; /* Change to your desired hover color */
+}
+
+/* Adjust padding or margins to position the navigation links properly */
+
+/* Add the following styles after your existing CSS */
+
+.education{
+    background: var(--second-bg-color);
+}
+
+.main-text{
+    text-align: center;
+}
+
+.main-text p{
+    color: var(--second-color);
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.main-text h2{
+    font-size: var(--h2-font);
+    line-height: 1;
+    font-size:30px;
+}
+
+.edu-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
+}
+
+.box{
+    background: rgba(255, 255, 255, 0.1);
+    padding: 35px 10px 10px 35px;
+    border-radius: 10px;
+    transition: all 1.45s ease;
+}
+
+.box h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+
+.box p{
+    color: var(--second-color);
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+
+.box:hover{
+    transform: scale(1.09);
+}
+
+/* Style projects */
+.project {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(215, 124, 171, 0.7); /* Semi-transparent white background */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Semi-transparent white border */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Drop shadow */
+    transition: transform 0.2s ease; /* Add a slight hover effect */
+
+    /* Glassmorphism effect with a backdrop filter */
+    backdrop-filter: blur(500px);
+    display: inline-block;
+    width: calc(50% - 45px);
+}
+
+.project:hover {
+    transform: scale(1.05); /* Enlarge the project on hover */
+}
+.project img {
+    max-width: 100%;
+    height: 200px;;
+}
+
+.project h2 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #0b0b0b;
+}
+
+/* Style the skills section */
+#skills {
+    padding: 40px;
+    text-align: left;
+    
+}
+
+#skills h1 {
+    font-size: 36px;
+    color: #333;
+    text-align: left;
+    margin-left: 250px;
+}
+
+.skill {
+    margin: 20px;
+    text-align: left;
+}
+
+/* Style the progress bars */
+.progress-bar {
+    background-color: #eee;
+    height: 20px;
+    border-radius: 10px;
+    position: relative;
+    width:50%;
+}
+
+.progress {
+    background-color: #0b0b0b; /* Change the color of the progress bar */
+    height: 100%;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 20px;
+    color: #ebdfdf;
+}
+
+
+
